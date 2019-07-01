@@ -16,7 +16,7 @@ gradle build docker
 docker run -p 5555:5555 -t pangu/apigateway
 
 - Debug for Docker
-docker run -e "JAVA_OPTS=-agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=n" -p 5555:5555 -p 8000:8000 -t pangu/apigateway
+docker run -e "JAVA_OPTS=-agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=n"
 
 - stop Docker service
 docker ps
